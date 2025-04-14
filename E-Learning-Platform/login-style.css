@@ -71,18 +71,3 @@
 .text-center a:hover {
     text-decoration: underline;
 }
-
-/* Password toggle button styles */
-.password-toggle {
-    border-radius: 0 8px 8px 0;
-    border-left: 1px solid #e0e0e0;
-    padding: 0 12px;
-}
-
-.password-toggle:hover {
-    background-color: #f8f9fa;
-}
-
-.password-toggle i {
-    font-size: 1.1rem;
-}

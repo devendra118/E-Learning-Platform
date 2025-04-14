@@ -44,81 +44,22 @@
 
   <div class="container my-5">
     <h2>Contact Us</h2>
-    <form id="contact-form">
+    <form>
       <div class="mb-3">
-        <label for="name" class="form-label">Name <span class="text-danger">*</span></label>
-        <input type="text" class="form-control" id="name" placeholder="Your name" required>
-        <div class="invalid-feedback">Please enter your name</div>
+        <label for="name" class="form-label">Name</label>
+        <input type="text" class="form-control" id="name" placeholder="Your name">
       </div>
       <div class="mb-3">
-        <label for="email" class="form-label">Email <span class="text-danger">*</span></label>
-        <input type="email" class="form-control" id="email" placeholder="name@example.com" required>
-        <div class="invalid-feedback">Please enter a valid email</div>
+        <label for="email" class="form-label">Email</label>
+        <input type="email" class="form-control" id="email" placeholder="name@example.com">
       </div>
       <div class="mb-3">
-        <label for="message" class="form-label">Message <span class="text-danger">*</span></label>
-        <textarea class="form-control" id="message" rows="3" placeholder="Your message" required></textarea>
-        <div class="invalid-feedback">Please enter your message</div>
+        <label for="message" class="form-label">Message</label>
+        <textarea class="form-control" id="message" rows="3" placeholder="Your message"></textarea>
       </div>
       <button type="submit" class="btn btn-primary">Send</button>
-      <div id="form-success" class="alert alert-success mt-3 d-none">
-        Thank you! Your message has been sent successfully.
-      </div>
     </form>
   </div>
-
-  <script>
-    document.getElementById('contact-form').addEventListener('submit', function(e) {
-      e.preventDefault();
-      
-      // Reset validation states
-      const inputs = this.querySelectorAll('input, textarea');
-      inputs.forEach(input => {
-        input.classList.remove('is-invalid');
-      });
-      
-      // Validate form
-      let isValid = true;
-      const name = document.getElementById('name');
-      const email = document.getElementById('email');
-      const message = document.getElementById('message');
-      
-      if (!name.value.trim()) {
-        name.classList.add('is-invalid');
-        isValid = false;
-      }
-      
-      if (!email.value.trim() || !/^\S+@\S+\.\S+$/.test(email.value)) {
-        email.classList.add('is-invalid');
-        isValid = false;
-      }
-      
-      if (!message.value.trim()) {
-        message.classList.add('is-invalid');
-        isValid = false;
-      }
-      
-      if (isValid) {
-        // Form is valid - show success message
-        document.getElementById('form-success').classList.remove('d-none');
-        this.reset();
-        
-        // Hide success message after 5 seconds
-        setTimeout(() => {
-          document.getElementById('form-success').classList.add('d-none');
-        }, 5000);
-      }
-    });
-
-    // Real-time validation for email
-    document.getElementById('email').addEventListener('input', function() {
-      if (this.value && !/^\S+@\S+\.\S+$/.test(this.value)) {
-        this.classList.add('is-invalid');
-      } else {
-        this.classList.remove('is-invalid');
-      }
-    });
-  </script>
 
   <footer class="bg-dark text-white py-4">
     <div class="container">
