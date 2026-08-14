@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Practical online courses for students, developers and professionals.">
+<title>Checkout | eLearning</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span><span>e<span>Learn</span></span></a>
+<button class="menu-toggle" aria-label="Open menu"><i class="bi bi-list"></i></button>
+<nav class="nav-links">
+<a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a class="nav-login" href="login.html">Log in</a><a class="nav-cta" href="courses.html">Explore courses <i class="bi bi-arrow-up-right"></i></a>
+</nav></div></header>
+<main class="checkout-page"><div class="container"><div class="checkout-top"><div><span class="kicker">CHECKOUT</span><h1>Complete your course purchase.</h1><p>This is a front-end checkout demonstration for the portfolio project.</p></div><a class="text-link" href="courses.html"><i class="bi bi-arrow-left"></i> Back to courses</a></div><div class="checkout-grid"><section class="form-card"><h2>Payment details</h2><form id="paymentForm"><div class="form-row"><label>Full name<input required placeholder="Your name"></label><label>Email<input required type="email" placeholder="you@example.com"></label></div><label>Payment method<select id="paymentMethod"><option>Credit / Debit Card</option><option>UPI</option><option>Net Banking</option></select></label><div id="cardFields"><label>Card number<input inputmode="numeric" placeholder="1234 5678 9012 3456"></label><div class="form-row"><label>Expiry<input placeholder="MM/YY"></label><label>CVV<input placeholder="123"></label></div></div><p id="paymentStatus" class="form-status" role="status" aria-live="polite"></p><button class="btn-primary full-btn" type="submit">Complete demo purchase <i class="bi bi-lock"></i></button><p class="demo-note"><i class="bi bi-shield-check"></i> No real payment is processed.</p></form></section><aside class="order-card"><span class="kicker">ORDER SUMMARY</span><div id="orderSummary"><h3>Selected course</h3><p id="courseName">Choose a course to see its details.</p><div class="order-total"><span>Total</span><strong id="coursePrice">₹0</strong></div></div></aside></div></div></main><footer class="footer"><div class="container footer-grid">
+<div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span><span>e<span>Learn</span></span></a><p>Learn practical skills through a simple, focused online learning experience.</p></div>
+<div><h4>Explore</h4><a href="courses.html">All Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div><h4>Account</h4><a href="login.html">Log in</a><a href="login.html">Create account</a><a href="payment.html">Checkout demo</a></div>
+<div><h4>Project</h4><p>Built with HTML, CSS, JavaScript and Bootstrap.</p><p class="muted">Portfolio project · 2026</p></div>
+</div><div class="container footer-bottom"><span>© 2026 eLearn</span><span>Learn. Build. Grow.</span></div></footer>
+<script src="app.js"></script></body></html>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en"><head>
+<meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="description" content="Contact the eLearn team about courses, feedback or learning questions.">
+<title>Contact | eLearning</title>
+<link rel="icon" href="favicon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
+<link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.css" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head><body>
+<header class="site-header"><div class="container nav-wrap">
+<a class="brand" href="index.html"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span><span>e<span>Learn</span></span></a>
+<button class="menu-toggle" aria-label="Open menu"><i class="bi bi-list"></i></button>
+<nav class="nav-links">
+<a href="index.html">Home</a><a href="courses.html">Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a>
+<a class="nav-login" href="login.html">Log in</a><a class="nav-cta" href="courses.html">Explore courses <i class="bi bi-arrow-up-right"></i></a>
+</nav></div></header>
+<main><section class="page-hero"><div class="container"><span class="kicker">CONTACT</span><h1>Let's talk about<br><em>your learning goals.</em></h1><p>Have a question, suggestion or course request? Send a message.</p></div></section>
+<section class="section"><div class="container contact-grid"><div><span class="kicker">GET IN TOUCH</span><h2>We'd love to hear from you.</h2><p class="lead">Use the form and tell us what you need. The form is configured for Netlify Forms when deployed.</p><div class="contact-items"><div><i class="bi bi-envelope"></i><div><b>Email</b><span>hello@elearn.example</span></div></div><div><i class="bi bi-chat-dots"></i><div><b>Support</b><span>Course questions & feedback</span></div></div><div><i class="bi bi-clock"></i><div><b>Response</b><span>Within 1–2 business days</span></div></div></div></div>
+<div class="form-card"><div class="form-card-head"><span class="kicker">MESSAGE</span><h2>Send an enquiry</h2></div><form id="contactForm" name="contact-enquiry" method="POST" data-netlify="true">
+<input type="hidden" name="form-name" value="contact-enquiry">
+<div class="form-row"><label>Name<input name="name" required maxlength="80" autocomplete="name" placeholder="Your name"></label><label>Email<input type="email" name="email" required maxlength="120" autocomplete="email" placeholder="you@example.com"></label></div>
+<label>Subject<input name="subject" required maxlength="140" placeholder="What can we help with?"></label>
+<label>Message<textarea name="message" rows="6" required maxlength="2000" placeholder="Write your message..."></textarea></label>
+<p id="contactStatus" class="form-status" role="status" aria-live="polite"></p>
+<button class="btn-primary full-btn" type="submit">Send message <i class="bi bi-arrow-up-right"></i></button>
+</form></div></div></section></main><footer class="footer"><div class="container footer-grid">
+<div><a class="brand footer-brand" href="index.html"><span class="brand-mark"><i class="bi bi-mortarboard-fill"></i></span><span>e<span>Learn</span></span></a><p>Learn practical skills through a simple, focused online learning experience.</p></div>
+<div><h4>Explore</h4><a href="courses.html">All Courses</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+<div><h4>Account</h4><a href="login.html">Log in</a><a href="login.html">Create account</a><a href="payment.html">Checkout demo</a></div>
+<div><h4>Project</h4><p>Built with HTML, CSS, JavaScript and Bootstrap.</p><p class="muted">Portfolio project · 2026</p></div>
+</div><div class="container footer-bottom"><span>© 2026 eLearn</span><span>Learn. Build. Grow.</span></div></footer>
+<script src="app.js"></script></body></html>
